@@ -3,4 +3,4 @@
 # of the file name
 
 DATE='date +%Y-%m-%d'
-date
+$(date)
