@@ -2,4 +2,4 @@
 #Prints a random word
 
 echo "Random Word: "
-cat words.txt | cut -d'\n' -f 2
+cat testWords.txt | cut -d' ' -f 2
