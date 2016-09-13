@@ -1,6 +1,6 @@
 #!/bin/bash
 # demonstrate variable scope 1.
-echo Hello, who am I talking to?
+#echo Hello, who am I talking to?
 
 read varname
 
