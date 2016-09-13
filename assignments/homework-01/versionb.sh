@@ -5,10 +5,10 @@
 ./versiona.sh $1
 
 DATE=$(date +%Y-%m-%d) #Same date format as versiona.sh
-copiedFile = $DATE'_'$1 #Create String to work with
+copiedFile=$DATE'_'$1 #Create String to work with
 echo $copiedFile
-fileType = "${copiedFile%.*}" #Substring of the file type (e.g. .txt)
-baseOfFile = basename $1 fileType #base name of the file
+fileType="${copiedFile%.*}" #Substring of the file type (e.g. .txt)
+baseOfFile="basename $1 fileType" #base name of the file
 
 
 
