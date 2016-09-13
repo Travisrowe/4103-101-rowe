@@ -1,7 +1,7 @@
 #!/bin/bash
 # sums the command arguments
 
-if [ $# -eq 1 ]
+if [ $# -eq 1 ] #If statements check how many arguments were passed
 then
   let a=$1
   echo $1=$a
