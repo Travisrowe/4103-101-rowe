@@ -10,7 +10,7 @@ copiedFile=$DATE'_'$1 #Create String to work with
 echo "copiedFile: $copiedFile"
 fileType=".${copiedFile##*.}" #Substring of the file type (e.g. .txt)
 echo "fileType: $fileType"
-baseOfFile="basename $1 .$fileType" #base name of the file
+baseOfFile=${$1%.*} #base name of the file
 echo "baseOfFile: $baseOfFile"
 
 cp $copiedFile $PWD/$baseOfFile'_'$DATE$fileType #replace file that versiona.sh made
