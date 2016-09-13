@@ -1,7 +1,7 @@
 #!/bin/bash
 #Prints a random word
 
-let a=$RANDOM%10
+let a=$RANDOM%250000
 
 echo "Random Word: "
-cat testWords.txt | cut -d$' ' -f $a
+cat /usr/share/dict/words | cut -d$' ' -f $a
