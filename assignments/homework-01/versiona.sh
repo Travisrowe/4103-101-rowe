@@ -2,6 +2,6 @@
 # Copies a file with the current date added to the beginning
 # of the file name
 
-DATE=$(date +%Y-%m-%d_)
+DATE=$(date +%Y-%m-%d)
 
-cp $1 $PWD/"$DATE$1"
+cp $1 $PWD/"$DATE'_'$1"
