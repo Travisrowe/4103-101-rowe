@@ -1,10 +1,1 @@
-unga
-bunga
-peaches
-plums
-oranges
-first
-second
-third
-fourth
-fifth
+unga bunga peaches plums oranges first second third fourth fifth
