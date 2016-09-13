@@ -2,4 +2,4 @@
 #Prints a random word
 
 echo "Random Word: "
-cat words.txt | cut -d' ' -f $RANDOM
+cat /usr/share/dict/words | cut -d' ' -f $RANDOM
