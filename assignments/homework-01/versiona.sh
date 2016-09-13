@@ -5,4 +5,4 @@
 DATE=$(date +%Y-%m-%d)
 echo $DATE
 
-cp $1 $PWD/"$DATE_$1"
+cp $1 $PWD/"$DATE\_$1"
