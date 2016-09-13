@@ -3,6 +3,5 @@
 # of the file name
 
 DATE=$(date +%Y-%m-%d_)
-echo $DATE
 
 cp $1 $PWD/"$DATE$1"
