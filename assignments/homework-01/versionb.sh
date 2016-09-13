@@ -15,5 +15,3 @@ echo "baseOfFile: $baseOfFile"
 
 cp $copiedFile $PWD/$baseOfFile'_'$DATE$fileType #replace file that versiona.sh made
                                                  #with file that has date at the end
-
-#cp $1 $PWD/$DATE'_'$1
