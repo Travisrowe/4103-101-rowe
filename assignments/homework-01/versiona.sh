@@ -3,4 +3,4 @@
 # of the file name
 
 DATE='date +%Y-%m-%d_'
-echo DATE
+echo $DATE
