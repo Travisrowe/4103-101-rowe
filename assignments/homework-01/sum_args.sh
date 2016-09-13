@@ -1,7 +1,6 @@
 #!/bin/bash
 # demonstrate variable scope 1.
-#echo Hello, who am I talking to?
+read var1 var2 var3 var4 var5 var6 var7 var8 var9
 
-read varname
-
-echo It\'s nice to meet you $varname
+let "a = var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9"
+echo "var1+var2+var3+var4+var5+var6+var7+var8+var9=$a"
