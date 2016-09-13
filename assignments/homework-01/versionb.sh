@@ -2,14 +2,15 @@
 # Copies a file with the current date added to the end
 # of the file name
 
-echo "What file do you want to copy?"
-read filename
+./versiona.sh $1
 
-./versiona.sh $filename
+DATE=$(date +%Y-%m-%d_) #Same date format as versiona.sh
+copiedFile = "$DATE$1" #Create String to work with
+fileType = "${copiedFile%.*}" #Substring of the file type (e.g. .txt)
+baseOfFile = basename $1 fileType #base name of the file
 
 
 
-DATE=$(date +_%Y-%m-%d)
-echo $DATE
+
 
 cp $1 $PWD/"$1$DATE"
