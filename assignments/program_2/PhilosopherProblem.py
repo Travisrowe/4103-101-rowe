@@ -43,7 +43,7 @@ class Philosopher(threading.Thread):
         
         threading.Thread.__init__(self)
         self.index = index
-		#amount of time Philosopher has eaten
+	#amount of time Philosopher has eaten
         self.time = 0
         
 
@@ -99,25 +99,17 @@ if __name__ == "__main__":
     # All philosophers start eating
     for philosopher in philosophers:
         philosopher.start()
-		
-    
-    signal.signal(signal.SIGINT, signal_handler)
-    print('Press Ctrl+C')
-    signal.pause()
 	
     # Allow CTRL + C to exit the program
     try:
         True
             
     except (KeyboardInterrupt, SystemExit):
-        
+
+        #Unfortunately, does not print these four lines before exiting.
         print("Philosopher 1 ate for " + str(philosophers[0].time) + " seconds.")
         print("Philosopher 2 ate for " + str(philosophers[1].time) + " seconds.")
         print("Philosopher 3 ate for " + str(philosophers[2].time) + " seconds.")
         print("Philosopher 4 ate for " + str(philosophers[3].time) + " seconds.")
         
         os.exit(0)
-		
-def signal_handler(signal, frame):
-    print('You pressed Ctrl+C!')
-    os.exit(0)
